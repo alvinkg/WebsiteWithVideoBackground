@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Travel Landing Page</title>
+
+    <script src="https://kit.fontawesome.com/677b2805fb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+</head>
+
+<body>
+    <section class="showcase active">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle active"></div>
+        </header>
+
+        <!-- EMBED YOUTUBE -->
+        <!-- <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1;&mute=1;&end=5;&playlist=tgbNymZ7vqY;&loop=1;&rel=0">
+        </iframe> -->
+
+        <!-- EMBED VIMEO -->
+        <!-- <iframe src="https://player.vimeo.com/video/685638943?h=6bf03d9ea4&autoplay=1&loop=1&title=0&byline=0&portrait=0&badge=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+
+        <!-- VIMEO BG MUTED VIDEO 1-->
+        <iframe src="https://player.vimeo.com/video/285779587?background=1"
+        frameborder="0" 
+        webkitallowfullscreen 
+        mozallowfullscreen allowfullscreen></iframe>
+
+        <!-- autoplay=1&loop=1&title=0&byline=0&portrait=0 -->
+        <!-- allow="autoplay; fullscreen; picture-in-picture" allowfullscreen> -->
+
+        <!-- VIMEO BG MUTED VIDEO 1-->
+        <!-- <iframe src="https://player.vimeo.com/video/76979871?background=1" 
+        width="500" height="281" frameborder="0" 
+        webkitallowfullscreen 
+        mozallowfullscreen allowfullscreen></iframe> -->
+
+        <!-- <video muted loop autoplay>
+            <source src="explore.mp4" type="video/mp4">
+            Your browser does not support the video element. Kindly update it to latest version.
+        </video> -->
+    
+        <!-- interesting idea of overlay to color a video -->
+        <div class="overlay"></div>
+    
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring the World</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sunt consequuntur magnam accusamus eveniet molestiae corporis inventore eum numquam aperiam.</p>
+            <a href="#">Explore</a>     
+        </div>
+    
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+            <!-- <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li> -->
+
+        </ul>
+
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li> 
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcaseToggle = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', ()=>{
+            menuToggle.classList.toggle('active')
+            showcaseToggle.classList.toggle('active')
+        })
+    </script>
+
+
+</body>
+</html>
